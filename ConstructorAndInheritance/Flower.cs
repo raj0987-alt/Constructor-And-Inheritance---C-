@@ -8,9 +8,18 @@ namespace ConstructorAndInheritance
 {
     internal class Flower : Tree
     {
-        public Flower(string Name)
+        //public Flower(string Name)
+        //{
+        //    Console.WriteLine("This Is Flower: {0}", Name);
+        //}
+        private string _color { get; set; }
+        public Flower(string color):base(color)
         {
-            Console.WriteLine("This Is Flower: {0}", Name);
+            _color = color;
+            Console.WriteLine("This color is : {0}", color);
         }
+       
+
+        public string name {  get; set; }
     }
 }

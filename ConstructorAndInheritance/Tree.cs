@@ -8,9 +8,17 @@ namespace ConstructorAndInheritance
 {
     internal class Tree
     {
-        public Tree()
+        private string _color {  get; set; }
+        public Tree(string color)
         {
-            Console.WriteLine("This is tree class");
+            _color = color;
+            Console.WriteLine("This color is: {0} ", color);
+
         }
+        public string pata {  get; set; }
+        public string shikor {  get; set; }
+        public string dal {  get; set; }
+
+    
     }
 }
